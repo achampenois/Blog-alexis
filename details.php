@@ -9,6 +9,8 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
@@ -16,6 +18,7 @@
         <nav class="block">
             <a href="Accueil.php"><span class="material-symbols-outlined">home</span><br>Accueil</a>
             <a href="Créateur.php"><span class="material-symbols-outlined">edit</span><br>Editeur</a>
+            <a href="modifier.php"><span class="material-symbols-outlined">app_registration</span><br>modifier</a>
         </nav>
         <h1>Détail du post !</h1>
     </header>
