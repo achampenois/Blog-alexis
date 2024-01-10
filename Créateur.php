@@ -42,11 +42,11 @@
                 <label for="post">Votre post :</label>
                 <input type="textarea" name="post" id="post">
                 <br>
-                <input type="submit" value="Publier">
+                <input type="submit" value="Publier" name="Publier">
             </fieldset>
         </form>
         <?php
-        if ($_SERVER["REQUEST METHOD"] == "POST" && isset($_POST["ajouter post"])) {
+        if ($_SERVER["REQUEST METHOD"] == "POST" && isset($_POST["Publier"])) {
             $surnom = $_POST["surnom"];
             $categorie = $_POST["categorie"];
             $post = $_POST["post"];
@@ -74,18 +74,18 @@
                     }
                     ?>
                 </select><br>
-                <input type="submit" name="supprimer post" value="Supprimer post">
+                <input type="submit" name="supprimer" value="supprimer post">
             </fieldset>
         </form>
         <?php
-        if ($_SERVER["REQUEST METHOD"] == "POST" && isset($_POST["supprimer post"])) {
+        if ($_SERVER["REQUEST METHOD"] == "POST" && isset($_POST["supprimer"])) {
             $post_id = $_POST["post_id"];
             $ex_requete = $pdo->prepare("DELETE FROM post WHERE id = :post.id");
             $ex_requete->bindParam(':post_id', $post_id, PDO::PARAM_INT);
             $ex_requete->execute();
         }
         ?>
-        <form method="post">
+        <form method="post" >
             <fieldset>
                 <legend>Modifier un post</legend><br>
                 <label for="post">Post à modifier :</label>
