@@ -1,0 +1,27 @@
+header {
+    background-color: rgb(206, 96, 32);
+    color: white;
+
+}
+.block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 2em 30em; 
+}
+h1 {
+    text-align: center;
+}
+.block a {
+    color: white;
+}
+
+footer {
+    background-color: rgb(206, 96, 32);
+    height: 10em;
+}
+.bordure {
+    border: 1px black solid;
+    
+   
+}
